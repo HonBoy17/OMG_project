@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* 한글서체 font-family: "Noto Sans KR", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* 메인 컬러 #FF5A00 */
+/* 승인 문구 색상 #09CE20*/
+/* 경고 문구 색상 #E83667 */
+
+
+/* ========== 공통 스타일 시트 시작 ========== */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    list-style: none; font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.7px;
+}
+a { display:block; color:#000000; text-decoration:none; }
+fieldset { border: none; }
+h1,h2,h3,h4,h5,h6 {	color: #FF5A00; }
+
+
+
+/* ========== 버튼 요소 스타일 시트 시작 ========== */
+.btn {
+	display: block;
+	color: #FF5A00; background: white; border:0.5px solid #FF5A00; outline:0; border-radius: 10px;
+	cursor: pointer; text-align: center; line-height: 100%; font-size: 1.8rem;
+}
+
+.fill { color: white; background: #FF5A00;}
+
+
+
+
+/* ========== 인풋 요소 스타일 시트 시작 ========== */
+.inputform {
+	display:block; width: 100%; padding:0 15px;
+	outline:0;
+	border: 1px solid #dee2e6; border-radius:10px;
+	transition: all 0.3s;
+}
+.inputform:focus {
+    outline: none;
+    border: 0.1px solid#FF5A00;
+}
+
+
+

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* ========== 회원 가입 전용 스타일 시트 ========== */
+.join-table .content { display: block; }
+.join-table .content i { font-size: 18px;}
+.join-table .content h2, .join-table .content p { padding: 5px 0; } /*.join-table .content:first-child {margin-bottom: 10px;}*/
+.join-table .content h2 { border-bottom: 1px solid #FF5A00;}
+.join-table {
+	width: 570px;
+	padding-top: 20px; margin: 50px auto;
+}
+/* ========== 약관 동의 =========*/
+.agreement { display: flex; }
+.required-text { font-weight: bold; color: #FF5A00; }
+
+/* input 요소 크기 부여*/
+.inputform,.btn, .gender-select input[type=radio]+label{ height: 56px; font-size: 17.5px; }
+.btn { width: 100%; }
+
+/* 전체 li margin 부여*/
+.signform li { margin-bottom: 28px; }
+
+
+/* userid 박스 넓이 조정 */
+.signform li:first-child .input-wrap {
+    display: grid;
+    grid-template-columns: 70% 28%;
+    column-gap: 2%;
+}
+
+/* label 요소 관련 스타일 시트 */
+label, .replace-label {
+    display: block;
+    font-weight: bold; font-size: 17px;
+}
+
+.input-wrap { padding-top: 9px; }
+
+/* 생년 월일 박스 크기 조정 */
+.birth-wrap { display: grid; grid-template-columns:30% 30% 30%; column-gap: 5%; }
+
+/* 성별 선택창 스타일 시트 */
+.gender-select{display: flex; justify-content: space-between;}
+.gender-select input[type=radio] {
+    display: none;
+}
+.gender-select input[type=radio]+label {
+	display: inline-block;
+    width: 49%; height: 56px; line-height: 54px; 
+    border: 0.05px solid #dee2e6; border-radius:  10px;
+    cursor: pointer; text-align: center; font-weight:bold;
+    transition: all 0.2s;
+}
+.gender-select input[type=radio]+label { background-color: #fff; color: #FF5A00; }
+.gender-select  input[type=radio]:checked+label { background-color: #FF5A00; color: #fff; }

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* 소개 content 스타일 시트*/
+.innerbox {
+	padding: 60px;
+	height: 600px;
+}
+.main-text {
+	font-weight: bold;
+	font-size: 26px;	
+}
+
+
+
+/* 배너 content 스타일 시트 */
+.banner-list {
+	display: flex;
+}
+.banner {
+	width: 500px; height: 400px;
+	text-align: center;
+	transition: all 0.3s;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.banner-list li a {
+	display: inline-block; position: relative; 
+	padding: 50px;
+}
+.hidden {
+	visibility: hidden;
+	position: absolute;
+	top: 50px; left: 51px;
+}
+.banner p {
+	margin: 50px 0;
+	font-size: 25px; 
+}
+.banner i {
+	font-size:67px;
+}
+.banner-list li a:hover .hidden {
+	z-index: 1;
+	visibility: visible;
+	transform: scale(1.05);
+	color: white;
+	background: #FF5A00;
+	border: none;
+}
